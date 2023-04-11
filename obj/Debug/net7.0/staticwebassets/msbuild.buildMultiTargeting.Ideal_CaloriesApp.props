@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Ideal_CaloriesApp.props" />
+</Project>

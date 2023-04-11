@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v7.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v7.0": {
+      "Ideal_CaloriesApp/1.0.0": {
+        "runtime": {
+          "Ideal_CaloriesApp.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Ideal_CaloriesApp/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

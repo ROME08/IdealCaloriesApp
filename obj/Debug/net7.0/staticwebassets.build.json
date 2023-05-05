@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "bxJv63hy96pq6HcECjFSW/44+U0bXwFpJYeiIxUHVtw=",
+  "Hash": "qQOMLUHnsdUGkDyA9siITlTwP55lBLlKx0ls4VtJ5KI=",
   "Source": "Ideal_CaloriesApp",
   "BasePath": "_content/Ideal_CaloriesApp",
   "Mode": "Default",
@@ -16,6 +16,40 @@
     }
   ],
   "Assets": [
+    {
+      "Identity": "C:\\Carlos Romero\\.NET 6_7\\IdealCaloriesApp\\wwwroot\\css\\form.css",
+      "SourceId": "Ideal_CaloriesApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Carlos Romero\\.NET 6_7\\IdealCaloriesApp\\wwwroot\\",
+      "BasePath": "_content/Ideal_CaloriesApp",
+      "RelativePath": "css/form.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\form.css"
+    },
+    {
+      "Identity": "C:\\Carlos Romero\\.NET 6_7\\IdealCaloriesApp\\wwwroot\\css\\layout.css",
+      "SourceId": "Ideal_CaloriesApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Carlos Romero\\.NET 6_7\\IdealCaloriesApp\\wwwroot\\",
+      "BasePath": "_content/Ideal_CaloriesApp",
+      "RelativePath": "css/layout.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\layout.css"
+    },
     {
       "Identity": "C:\\Carlos Romero\\.NET 6_7\\IdealCaloriesApp\\wwwroot\\css\\style.css",
       "SourceId": "Ideal_CaloriesApp",

@@ -1,6 +1,14 @@
 {
   "Files": [
     {
+      "Id": "C:\\Carlos Romero\\.NET 6_7\\IdealCaloriesApp\\wwwroot\\css\\form.css",
+      "PackagePath": "staticwebassets\\css\\form.css"
+    },
+    {
+      "Id": "C:\\Carlos Romero\\.NET 6_7\\IdealCaloriesApp\\wwwroot\\css\\layout.css",
+      "PackagePath": "staticwebassets\\css\\layout.css"
+    },
+    {
       "Id": "C:\\Carlos Romero\\.NET 6_7\\IdealCaloriesApp\\wwwroot\\css\\style.css",
       "PackagePath": "staticwebassets\\css\\style.css"
     },

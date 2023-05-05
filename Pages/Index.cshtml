@@ -1,14 +1,106 @@
-@page
+@page 
+@model Ideal_CaloriesApp.Pages.IndexModel
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="~/css/style.css" asp-append-version="true" />
-    <title>Document</title>
+    <link rel="stylesheet" href="~/css/layout.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/form.css" asp-append-version="true" />
+    <title>IDC</title>
 </head>
 <body>
-    <h1>Index File</h1>    
+
+    <header class="menu-bar">
+        Ideal Calories App
+        @* <h1 style="color:black;">@ViewData["Message"]</h1> *@
+    </header>
+
+    <main>
+        <div class="row-wrapper">
+            <div class="row1">
+                
+                <form method="post" class="col_bmaform">
+                    <h1>Body Measurements & Activity</h1>
+                    
+                    <div class="input-row">
+                        <label asp-for="Weight">Weight</label>
+                        <div class="input-form">
+                            <input asp-for="Weight" type="text">
+                            <select asp-for="WeightUnit" asp-items="Model.WeightUnits" class="units">
+                                @* <option style="display: none;" value="" disabled selected>UNITS</option> 
+                                <option value="kg">kg</option>
+                                <option value="lb">lb</option> *@
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="input-row">
+                        <label asp-for="Height">Height</label>
+                        <div class="input-form">
+                            <input asp-for="Height" type="text">
+                            <select asp-for="HeightUnit" asp-items="Model.HeightUnits" class="units">
+                                @* <option style="display: none;" value="" disabled selected>UNITS</option>
+                                <option value="in">in</option>
+                                <option value="cm">cm</option> *@
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="input-row">
+                        <label for="">Age</label>                       
+                        <input asp-for="Age" type="text">
+                    </div>
+
+                    
+                    <div class="input-row">
+                        <label for="">Gender</label>                       
+                        <select  asp-for="Gender" asp-items="Model.Genders">
+                            @* <option value="">Male</option>
+                            <option value="">Female</option> *@
+                        </select>
+                    </div>
+
+                    <div class="input-row" style="grid-template-columns: 4fr;">
+                        <label style="margin-bottom:0.5rem;" for="">Physical Ability</label>                       
+                        <select asp-for="ActivityLevel" asp-items="Model.ActivityLevels" class="activity">
+                            @* <option value="">Sedentary (little or no exercise): BMR x 1.2</option>
+                            <option value="">Lightly active (light exercise or sports 1-3 days a week): BMR x 1.375</option>
+                            <option value="">Moderately active (moderate exercise or sports 3-5 days a week): BMR x 1.55</option>
+                            <option value="">Very active (hard exercise or sports 6-7 days a week): BMR x 1.725</option>
+                            <option value="">Extra active (very hard exercise or sports, physical job or training twice a day): BMR x 1.9</option> *@
+                        </select>
+                    </div>
+
+                    <div class="form-button">
+                        <button>Calculate</button>
+                    </div>
+
+                </form>
+
+                <div class="col_calguide">
+                    <h1>Calorie Guideline-Ordered Visual</h1>
+                    <div class="guide">
+                        <div style="background-color:rgb(8,146,84);" class="guideline">Ideal Calorie Intake</div>
+                        <div style="background-color:rgb(9,179,102);" class="guideline">875 Calorie Deficit - 1/4 pound</div>
+                        <div style="background-color:rgb(11,211,121);" class="guideline">1750 Calories Deficit - 1/2 pound</div>
+                        <div style="background-color:rgb(13,230,139);" class="guideline">3500 Calories Deficit - 1 pound</div>
+                        <div style="background-color:rgb(13,243,139);" class="guideline">7000 Calories Deficit - 2 pound</div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+        <p style="margin-right:1rem;">
+            Carlos Romero
+        </p>
+    </footer>
+
 </body>
 </html>
